@@ -13,8 +13,8 @@ const CourseCard = ({ name, cover, logo, description, link }: CourseCardType) =>
 	return (
 		<CourseCardStyle>
 			<div className="cover-image">
-				<img src={cover} className="cover-pic" width="100%" />
-				{logo && <img src={logo} width="100%" className="logo" />}
+				<img src={cover} className="cover-pic" width="100%" loading="lazy" alt="logo" />
+				{logo !== '' && <img src={logo} width="100%" className="logo" loading="lazy" alt="cover" />}
 			</div>
 			<div className="course-description">
 				<h3>

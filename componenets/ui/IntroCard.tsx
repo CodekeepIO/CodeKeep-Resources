@@ -4,6 +4,8 @@ import { Facebook } from 'react-feather';
 import { Twitter } from 'react-feather';
 
 const IntroCard = () => {
+	const URL = 'https://resources.codekeep.io';
+
 	return (
 		<HeroSection>
 			<div>
@@ -13,10 +15,18 @@ const IntroCard = () => {
 					this COVID-19 times.
 					<div className="share">
 						Share on
-						<a target="_BLANK" href="http://facebook.com/sharer/sharer.php?u=" rel="noreferrer noopener">
+						<a
+							target="_BLANK"
+							href={`http://facebook.com/sharer/sharer.php?u=${URL}`}
+							rel="noreferrer noopener"
+						>
 							<Facebook size={16} /> Facebook
 						</a>
-						<a target="_BLANK" href="https://twitter.com/intent/tweet?&url=" rel="noreferrer noopener">
+						<a
+							target="_BLANK"
+							href={`https://twitter.com/intent/tweet?&url=${URL}&hashtags=codekeep`}
+							rel="noreferrer noopener"
+						>
 							<Twitter size={16} /> Twitter
 						</a>
 					</div>
