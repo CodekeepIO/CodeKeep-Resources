@@ -63,7 +63,7 @@ const Home = () => {
 				title="CodeKeep Free Resources"
 				description="#StayHome - Resources to upskill yourself. Curated collection of resources offered for free during
 					this COVID-19 times."
-				keywords="video,courses,covid19"
+				keywords="video courses, stay home, skill up,courses,covid19"
 			/>
 
 			<IntroCard />
