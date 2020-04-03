@@ -10,10 +10,10 @@ const Header = () => {
 				Codekeep
 			</Logo>
 			<Nav>
-				<a href="https://github.com/codekeepio" target="_BLANK" rel="noreferrer noopener">
+				<a href="https://github.com/CodekeepIO/CodeKeep-Resources" target="_BLANK" rel="noreferrer noopener">
 					<GitHub size={16} /> Github
 				</a>
-				<a href="https://github.com/codekeepio" target="_BLANK" rel="noreferrer noopener">
+				<a href="https://github.com/CodekeepIO/CodeKeep-Resources" target="_BLANK" rel="noreferrer noopener">
 					Add Course
 				</a>
 			</Nav>
