@@ -8,7 +8,7 @@ interface MetaProps {
 }
 
 const Meta = ({ title: pageTitleText, description, keywords }: MetaProps): any => {
-	const imageUrl: string = '/assets/images/cover.jpg';
+	const imageUrl: string = 'https://i.imgur.com/ZAlfi73.png';
 	const siteName: string = 'CodeKeep';
 	const pageTitle: string = `${pageTitleText}`;
 	return (
