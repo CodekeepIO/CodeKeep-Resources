@@ -5,7 +5,9 @@
 	"scripts": {
 		"dev": "NODE_PATH=. next dev",
 		"build": "NODE_PATH=. next build",
-		"start": "NODE_PATH=. next start"
+		"start": "NODE_PATH=. next start",
+		"export": "next export",
+		"deploy": "npm run build && npm run export"
 	},
 	"dependencies": {
 		"@svgr/webpack": "^5.3.0",
