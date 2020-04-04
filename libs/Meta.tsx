@@ -17,7 +17,7 @@ const Meta = ({ title: pageTitleText, description, keywords }: MetaProps): any =
 			<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 			<meta name="author" content="Devzstudio" />
 			<meta name="author" content="Devzstudio" />
-			<link rel="icon" type="image/x-icon" href="https://codekeep.com/favicon.ico" />
+			<link rel="icon" type="image/x-icon" href="https://codekeep.io/favicon.ico" />
 
 			<meta name="theme-color" content="#AD020E" />
 			<meta name="msapplication-navbutton-color" content="#AD020E" />
@@ -34,7 +34,7 @@ const Meta = ({ title: pageTitleText, description, keywords }: MetaProps): any =
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta property="og:title" content={pageTitleText} />
 			<meta property="og:type" content="article" />
-			<meta property="og:url" content="https://www.codekeep.com/" />
+			<meta property="og:url" content="https://resources.codekeep.io/" />
 			<meta property="og:image" content={imageUrl} />
 			<meta name="twitter:site" content="@codekeep" />
 			<meta name="twitter:creator" content="@codekeep" />
@@ -42,7 +42,7 @@ const Meta = ({ title: pageTitleText, description, keywords }: MetaProps): any =
 
 			<meta property="og:title" content={pageTitleText} />
 			<meta property="og:type" content="article" />
-			<meta property="og:url" content="https://www.codekeep.com/" />
+			<meta property="og:url" content="https://resources.codekeep.io/" />
 			<meta property="og:image" content={imageUrl} />
 			<meta property="og:description" content={description} />
 			<meta property="og:site_name" content={siteName} />
