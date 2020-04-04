@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo, HeaderStyle, Nav } from 'styles';
-import { GitHub } from 'react-feather';
+import { GitHub, Twitter } from 'react-feather';
 
 const Header = () => {
 	return (
@@ -15,6 +15,9 @@ const Header = () => {
 				</a>
 				<a href="https://github.com/CodekeepIO/CodeKeep-Resources" target="_BLANK" rel="noreferrer noopener">
 					Add Course
+				</a>
+				<a href="https://twitter.com/codekeepio" target="_BLANK" rel="noreferrer noopener">
+					<Twitter size="16" />
 				</a>
 			</Nav>
 		</HeaderStyle>

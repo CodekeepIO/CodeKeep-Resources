@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const breakpoints = [576, 768, 992, 1200];
 
-const mq = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
+const mq = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
 
 export const GlobalStyle = createGlobalStyle`
 	::selection {
@@ -62,11 +62,16 @@ export const Container = styled.div`
 
 export const HeaderStyle = styled.header`
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 `;
 
 export const Nav = styled.nav`
+	${mq[0]} {
+		margin-top: 2rem;
+	}
+
 	a {
 		color: #474c5f;
 		padding: 0 1rem;
@@ -179,7 +184,7 @@ export const HeroSection = styled.div`
 			}
 			box-sizing: border-box;
 			text-decoration: none;
-			margin: 0 10px;
+			margin: 0 5px;
 			display: inline-block;
 			margin-bottom: 0;
 			font-weight: 500;
@@ -270,6 +275,15 @@ export const CourseCardStyle = styled.div`
 		}
 	}
 	.course-description {
+		.tag {
+			line-height: 0;
+			padding: 0;
+			margin: 0;
+			color: #737373;
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+		}
 		a {
 			word-break: break-word;
 			color: #474c5f;

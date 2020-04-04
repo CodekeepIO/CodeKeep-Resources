@@ -8,16 +8,17 @@ const CourseData = [
 			'Stay Home! Skill Up! Get FREE access to 7,000+ Pluralsight courses during the month of April. THE technology skills platform with expert-led, online courses for web development, IT training and more! Start learning today!',
 		link: 'https://www.pluralsight.com/',
 		tags: [
+			'all',
 			'machine learning',
 			'software development',
 			'cyber security',
 			'artificial intelligence',
 			'cloud computing',
-			'web development'
+			'web development',
 		],
 		category: 'all',
 		entireWebsite: true,
-		specificCourse: false
+		specificCourse: false,
 	},
 	{
 		name: 'FullstackAcademy',
@@ -28,7 +29,7 @@ const CourseData = [
 		tags: ['html', 'css', 'javascript'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Automate the Boring Stuff with Python Programming',
@@ -40,7 +41,7 @@ const CourseData = [
 		tags: ['python'],
 		category: 'software development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -53,7 +54,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['html', 'css', 'js'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Complete Python Course: Zero to Hero',
@@ -64,7 +65,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['python'],
 		category: 'software development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Python for Penetration Testers',
@@ -75,7 +76,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['pen testing', 'python'],
 		category: 'cyber security',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -89,7 +90,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['security'],
 		category: 'cyber security',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -102,7 +103,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['photoshop'],
 		category: 'design',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Learn JavaScript From Scratch',
@@ -113,7 +114,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['javaScript'],
 		category: 'programming languages',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Facebook Ads And Marketing - Lead Generation Pro - 2020',
@@ -124,7 +125,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['marketing'],
 		category: 'marketing',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Digital Marketing Masterclass - 23 Courses in 1',
@@ -136,7 +137,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['Digital Marketing'],
 		category: 'marketing',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Adobe Lightroom CC Photo Editing: Your Lightroom Masterclass',
@@ -148,7 +149,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['Photography Tools'],
 		category: 'design',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -161,7 +162,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['Content Marketing'],
 		category: 'marketing',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Adobe InDesign CC: Your Complete Guide to InDesign',
@@ -173,7 +174,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['Design Tools'],
 		category: 'design',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Artificial Intelligence Exposed: Future 1.0 Extreme Edition',
@@ -185,7 +186,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['artificial intelligence'],
 		category: 'artificial intelligence',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Home Business Basic Sales & Marketing Tools',
@@ -196,7 +197,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['marketing'],
 		category: 'marketing',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'The SQL and MySQL Master',
@@ -207,7 +208,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['sql'],
 		category: 'database',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Responsive Web Design with HTML5 and CSS3 - Introduction',
@@ -219,7 +220,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['responsive design'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -231,7 +232,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['responsive design'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: '[NEW] React + Firebase: For Beginners',
@@ -243,7 +244,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['react hooks'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'The Growth Hacker Interviews',
@@ -254,7 +255,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['marketing'],
 		category: 'marketing',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -267,7 +268,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['web development'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'JavaScript for QA Engineers and SDETs',
@@ -279,7 +280,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['javascript'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Database Design',
@@ -291,7 +292,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['database'],
 		category: 'databases',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'The Comprehensive Unity Bootcamp - Build Games and UI',
@@ -302,7 +303,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['game development'],
 		category: 'game development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Mobile ML and Data Science with nitroproc',
@@ -313,7 +314,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['machine learning'],
 		category: 'machine learning',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Free AWS Certified Cloud Practitioner 2019',
@@ -324,7 +325,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['aws'],
 		category: 'cloud computing',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Adobe Illustrator form beginner to expert',
@@ -335,7 +336,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['adobe illustrator'],
 		category: 'design',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Database Design and MySQL',
@@ -347,7 +348,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['mysql'],
 		category: 'databases',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -360,7 +361,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['rabbitmq'],
 		category: 'software development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Learn JavaScript - For Beginners',
@@ -371,7 +372,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['web development'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Startup BoostCamp: Useful tools for 1st time entrepreneurs',
@@ -382,7 +383,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['startup'],
 		category: 'entrepreneurship',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Photoshop Basics: For Beginners',
@@ -393,7 +394,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['mobile app design'],
 		category: 'design',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 
 	{
@@ -406,7 +407,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['kali linux'],
 		category: 'cyber security',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'React Fullstack with node/express, PostgreSQL and AWS',
@@ -417,7 +418,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['react'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Build OLX Clone With Python & Django',
@@ -428,7 +429,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['web development'],
 		category: 'web development',
 		entireWebsite: false,
-		specificCourse: true
+		specificCourse: true,
 	},
 	{
 		name: 'Android Game Development Crash Course For Beginners',
@@ -441,8 +442,8 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		tags: ['android'],
 		category: 'mobile development',
 		entireWebsite: false,
-		specificCourse: true
-	}
+		specificCourse: true,
+	},
 ];
 
 export default CourseData;
