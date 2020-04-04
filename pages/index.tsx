@@ -10,12 +10,12 @@ import Search from 'componenets/ui/Search';
 import NoResults from 'componenets/ui/NoResults';
 import Sidebar from 'componenets/ui/Sidebar';
 
-import { Container, CoursesList, TextMuted } from 'styles';
+import { Container, CoursesList, CKLink } from 'styles';
 
 const INITIAL_FILTER = {
 	entireWebsite: true,
 	specificCourse: true,
-	category: null
+	category: null,
 };
 
 const applyFilterandSearch = (search, filter, data) => {
@@ -46,12 +46,12 @@ const Home = () => {
 		if (name === 'category') {
 			setFilter({
 				...filter,
-				category: value
+				category: value,
 			});
 		} else
 			setFilter({
 				...filter,
-				[name]: filter[name] === 'on' || filter[name] === true ? false : true
+				[name]: filter[name] === 'on' || filter[name] === true ? false : true,
 			});
 	};
 
@@ -67,13 +67,18 @@ const Home = () => {
 			/>
 
 			<IntroCard />
+			<CKLink>
+				<a href="https://codekeep.io" target="_BLANK" rel="noreferrer noopener">
+					CodeKeep - Organize. Discover. Share. Snippets.
+				</a>
+			</CKLink>
 			<Container>
 				<Sidebar filter={filter} setFilter={updateFilter} clearFilter={clearFilter} />
 				<div className="content">
 					<Search search={search} setSearch={setSearch} />
 
 					<CoursesList>
-						{CourseData.map(data => {
+						{CourseData.map((data) => {
 							if (applyFilterandSearch(search, filter, data)) {
 								results++;
 								return <CourseCard {...data} key={data.name} />;

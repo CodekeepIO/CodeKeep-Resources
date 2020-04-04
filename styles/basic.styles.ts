@@ -60,6 +60,12 @@ export const Container = styled.div`
 	}
 `;
 
+export const CKLink = styled.p`
+	text-align: center;
+	a {
+		color: #000;
+	}
+`;
 export const HeaderStyle = styled.header`
 	display: flex;
 	flex-wrap: wrap;
