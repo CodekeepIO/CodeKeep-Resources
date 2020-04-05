@@ -62,7 +62,7 @@ const Home = () => {
 			<Meta
 				title="CodeKeep Free Resources"
 				description="#StayHome - Resources to upskill yourself. Curated collection of resources offered for free during
-					this COVID-19 times."
+					this COVID-19 crisis."
 				keywords="video courses, stay home, skill up,courses,covid19"
 			/>
 

@@ -12,7 +12,7 @@ const IntroCard = () => {
 				<h3>Free Resources</h3>
 				<div className="description">
 					#StayHome - Resources to upskill yourself. Curated collection of resources offered for free during
-					this COVID-19 times.
+					this COVID-19 crisis.
 					<div className="share">
 						Share on
 						<a
