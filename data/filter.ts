@@ -1,12 +1,12 @@
 const CourseFilters = [
 	{
 		name: 'entireWebsite',
-		label: 'Entire Website'
+		label: 'Entire Website',
 	},
 	{
 		name: 'specificCourse',
-		label: 'Specific Course'
-	}
+		label: 'Specific Course',
+	},
 ];
 
 const CourseCategory = [
@@ -14,13 +14,14 @@ const CourseCategory = [
 	'Cloud Computing',
 	'Cyber Security',
 	'Database',
+	'Data Science',
 	'Design',
 	'Game Development',
 	'Marketing',
 	'Machine Learning',
 	'Mobile Development',
 	'Software Development',
-	'Web Development'
+	'Web Development',
 ];
 
 export { CourseFilters, CourseCategory };
