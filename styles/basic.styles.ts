@@ -281,6 +281,10 @@ export const CourseCardStyle = styled.div`
 		}
 	}
 	.course-description {
+		h3 {
+			z-index: 9;
+			position: relative;
+		}
 		.tag {
 			line-height: 0;
 			padding: 0;
