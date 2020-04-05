@@ -21,6 +21,18 @@ const CourseData = [
 		specificCourse: false,
 	},
 	{
+		name: 'Oracle',
+		cover: 'http://www.oracle.com/us/oracle-social-share-fb-480-2516041.jpg',
+		logo: 'https://pbs.twimg.com/profile_images/1171452654112755712/MW0_-kQQ_400x400.jpg',
+		description:
+			'Oracle Ramps Up Free Online Learning and Certifications for Oracle Cloud Infrastructure and Oracle Autonomous Database',
+		link: 'https://www.oracle.com/corporate/blog/free-certifications-oracle-oci-autonomous-033020.html',
+		tags: ['cloud computing'],
+		category: 'all',
+		entireWebsite: true,
+		specificCourse: false,
+	},
+	{
 		name: 'FullstackAcademy',
 		cover: 'https://cloud.fullstackacademy.com/_centerCrop/FSA-blog-header-code-from-home.jpg?mtime=20200330123415',
 		logo: 'https://pbs.twimg.com/profile_images/1145685694238605312/q4JCNy_X_400x400.jpg',
