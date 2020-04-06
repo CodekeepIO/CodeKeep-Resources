@@ -65,6 +65,9 @@ export const CKLink = styled.p`
 	a {
 		color: #000;
 	}
+	span {
+		color: #0af;
+	}
 `;
 export const HeaderStyle = styled.header`
 	display: flex;

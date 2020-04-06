@@ -69,7 +69,7 @@ const Home = () => {
 			<IntroCard />
 			<CKLink>
 				<a href="https://codekeep.io" target="_BLANK" rel="noreferrer noopener">
-					CodeKeep - Organize. Discover. Share. Snippets.
+					<span>CodeKeep</span> - Organize. Discover. Share. Snippets.
 				</a>
 			</CKLink>
 			<Container>
