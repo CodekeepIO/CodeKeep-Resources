@@ -5,7 +5,7 @@ import { Search } from 'react-feather';
 const SearchBar = ({ search, setSearch }) => {
 	return (
 		<SearchInput>
-			<input type="text" onChange={e => setSearch(e.target.value)} value={search} placeholder="Seach" />{' '}
+			<input type="text" onChange={(e) => setSearch(e.target.value)} value={search} placeholder="Search" />{' '}
 			<Search size="16" />
 		</SearchInput>
 	);
