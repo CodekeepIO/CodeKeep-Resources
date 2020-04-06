@@ -347,7 +347,7 @@ Learn HTML, CSS and JavaScript through project- based learning.`,
 		specificCourse: true,
 	},
 	{
-		name: '[NEW] React + Firebase: For Beginners',
+		name: 'React + Firebase: For Beginners',
 		cover: 'https://img-a.udemycdn.com/course/480x270/2655532_1d0b_2.jpg',
 		logo: '',
 		description:
