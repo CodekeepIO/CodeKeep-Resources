@@ -27,7 +27,7 @@ const CourseDetails = ({ query }: { query: any }) => {
 		4
 	);
 
-	const URL = `https://resources.codekeep.io/course/index?post=${courseSlug}`;
+	const URL = `https://resources.codekeep.io/course?post=${courseSlug}`;
 
 	if (!data[0]) {
 		return (
