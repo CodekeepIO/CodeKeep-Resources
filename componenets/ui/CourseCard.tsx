@@ -13,7 +13,7 @@ type CourseCardType = {
 
 const CourseCard = ({ name, tags, cover, logo, description, link }: CourseCardType) => {
 	const courseSlug = name.toLowerCase().replace(' ', '_');
-	const URL = `https://resources.codekeep.io/course/${courseSlug}`;
+	const URL = `https://resources.codekeep.io/course/index?post=${courseSlug}`;
 
 	return (
 		<CourseCardStyle>

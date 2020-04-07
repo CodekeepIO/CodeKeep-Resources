@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Meta from 'libs/Meta';
 import CourseData from 'data/index';
 import Layout from 'componenets/Layout';
@@ -7,11 +7,19 @@ import { useRouter } from 'next/router';
 import { Hash, ArrowLeft, Facebook, Twitter } from 'react-feather';
 import { CourseFullpageCard, ErrorPage, BreadCrumb, CourseWrapperList, FlexSb } from 'styles';
 import CourseCard from 'componenets/ui/CourseCard';
+import { isEmpty, getParameterByName } from 'libs/helpers';
 
-const CourseDetails = () => {
+const CourseDetails = ({ query }: { query: any }) => {
 	const router = useRouter();
 
-	const courseSlug = router.query.name;
+	useEffect(() => {
+		const url = window.location.href;
+		if (isEmpty(query)) {
+			query.wid = getParameterByName('post', url);
+		}
+	}, []);
+
+	const courseSlug = query.post;
 	const data = CourseData.filter((data) => data.name.toLowerCase().replace(' ', '_') === courseSlug);
 
 	const otherCourses = CourseData.filter((data) => data.name.toLowerCase().replace(' ', '_') !== courseSlug).splice(
@@ -19,7 +27,7 @@ const CourseDetails = () => {
 		4
 	);
 
-	const URL = `https://resources.codekeep.io/course/${courseSlug}`;
+	const URL = `https://resources.codekeep.io/course/index?post=${courseSlug}`;
 
 	if (!data[0]) {
 		return (
@@ -101,6 +109,10 @@ const CourseDetails = () => {
 			</CourseWrapperList>
 		</Layout>
 	);
+};
+
+CourseDetails.getInitialProps = ({ query }: { query: any }) => {
+	return { query };
 };
 
 export default CourseDetails;
