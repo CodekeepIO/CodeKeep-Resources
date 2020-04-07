@@ -326,6 +326,7 @@ export const CourseFullpageCard = styled.div`
 	}
 	.course-description {
 		padding: 2rem;
+		flex-grow: 1;
 		h3 {
 			z-index: 9;
 			position: relative;

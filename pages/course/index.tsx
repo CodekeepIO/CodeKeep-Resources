@@ -29,6 +29,16 @@ const CourseDetails = ({ query }: { query: any }) => {
 
 	const URL = `https://resources.codekeep.io/course?post=${courseSlug}`;
 
+	if (!courseSlug) {
+		return (
+			<Layout>
+				<ErrorPage>
+					<p>Loading...</p>{' '}
+				</ErrorPage>
+			</Layout>
+		);
+	}
+
 	if (!data[0]) {
 		return (
 			<Layout>
