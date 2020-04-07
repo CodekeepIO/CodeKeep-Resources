@@ -14,10 +14,10 @@ const CourseDetails = ({ query }: { query: any }) => {
 
 	useEffect(() => {
 		const url = window.location.href;
-		if (isEmpty(query)) {
-			query.post = getParameterByName('post', url);
-		}
+		query.post = getParameterByName('post', url);
 	}, []);
+
+	console.log(query);
 
 	const courseSlug = query.post;
 	const data = CourseData.filter((data) => data.name.toLowerCase().replace(' ', '_') === courseSlug);
@@ -58,15 +58,15 @@ const CourseDetails = ({ query }: { query: any }) => {
 					{logo !== '' && <img src={logo} width="100%" className="logo" loading="lazy" alt="cover" />}
 				</div>
 				<div className="course-description">
-					<span className="tag">
-						<Hash size="12" />
-						{tags[0]}
-					</span>
 					<h3>
 						<a target="_BLANK" rel="noreferrer noopener" href={`${link}?ref=codekeep.io`}>
 							{name}
 						</a>
 					</h3>
+					<span className="tag">
+						<Hash size="12" />
+						{tags[0]}
+					</span>
 
 					<p>{description}</p>
 					<FlexSb>
