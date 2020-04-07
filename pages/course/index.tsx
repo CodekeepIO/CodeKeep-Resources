@@ -15,7 +15,7 @@ const CourseDetails = ({ query }: { query: any }) => {
 	useEffect(() => {
 		const url = window.location.href;
 		if (isEmpty(query)) {
-			query.wid = getParameterByName('post', url);
+			query.post = getParameterByName('post', url);
 		}
 	}, []);
 
