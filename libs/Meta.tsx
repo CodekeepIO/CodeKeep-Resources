@@ -5,12 +5,14 @@ interface MetaProps {
 	title: string;
 	description: string;
 	keywords: string;
+	image?: string;
 }
 
-const Meta = ({ title: pageTitleText, description, keywords }: MetaProps): any => {
-	const imageUrl: string = 'https://i.imgur.com/ZAlfi73.png';
+const Meta = ({ title: pageTitleText, description, keywords, image }: MetaProps): any => {
+	const imageUrl: string = image ? image : 'https://i.imgur.com/ZAlfi73.png';
 	const siteName: string = 'CodeKeep';
 	const pageTitle: string = `${pageTitleText}`;
+
 	return (
 		<Head>
 			<title>{pageTitle}</title>

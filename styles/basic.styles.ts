@@ -40,6 +40,11 @@ export const GlobalStyle = createGlobalStyle`
 	}
 `;
 
+export const FlexSb = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+`;
 export const FlexEnd = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -137,6 +142,7 @@ export const SidebarStyle = styled.div`
 `;
 export const Logo = styled.div`
 	display: flex;
+	cursor: pointer;
 	align-items: center;
 	img {
 		margin-right: 10px;
@@ -254,6 +260,132 @@ export const CoursesList = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 `;
+
+export const ErrorPage = styled.div`
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	button {
+		color: #fff;
+		background: #118cf0;
+		padding: 10px 20px;
+		border-radius: 0.4rem;
+		border: 0px;
+		cursor: pointer;
+		:hover {
+			background: #000;
+		}
+	}
+`;
+
+export const BreadCrumb = styled.div`
+	display: flex;
+	align-items: center;
+	color: #737373;
+	margin: 2rem 0;
+	cursor: pointer;
+	:hover {
+		color: #000;
+	}
+`;
+
+export const CourseWrapperList = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+`;
+
+export const CourseFullpageCard = styled.div`
+	display: flex;
+	margin-top: 2rem;
+	box-shadow: 4px 12px 47px 0 rgba(0, 0, 0, 0.1);
+
+	${mq[0]} {
+		flex-wrap: wrap;
+	}
+	.share {
+		color: #737373;
+		a {
+			padding: 0 10px;
+			:hover {
+				color: #118cf0;
+			}
+		}
+	}
+	.cover-image {
+		position: relative;
+		max-width: 300px;
+		.cover-pic {
+			border-radius: 4px 4px 0 0;
+			height: 188px;
+			background: #f0f0f0;
+		}
+	}
+	.course-description {
+		padding: 2rem;
+		h3 {
+			z-index: 9;
+			position: relative;
+		}
+		.tag {
+			line-height: 0;
+			padding: 0;
+			margin: 0;
+			color: #737373;
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+		}
+		a {
+			word-break: break-word;
+			color: #474c5f;
+			:hover {
+				color: #000;
+			}
+		}
+		p {
+			color: #737373;
+			min-height: 107px;
+			font-size: 13px;
+			line-height: 1.4rem;
+			text-align: justify;
+		}
+		.redirect {
+			display: flex;
+			justify-content: flex-end;
+			.redirectLink {
+				background: none;
+				border: 1px solid #118cf0;
+				background: none;
+				color: #474c5e;
+				padding: 0.5rem 1rem;
+				display: inline-block;
+				border-radius: 0.4rem;
+				font-size: 14px;
+				text-align: center;
+
+				:hover {
+					transform: translateY(-3px);
+					background: #118cf0;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.logo {
+		position: absolute;
+		top: 130px;
+		right: 93px;
+		border-radius: 230px;
+		width: 100px;
+		border: 5px solid #fff;
+		border-radius: 100px;
+	}
+`;
+
 export const CourseCardStyle = styled.div`
 	box-sizing: border-box;
 	text-decoration: none;
@@ -313,8 +445,19 @@ export const CourseCardStyle = styled.div`
 		}
 		.redirect {
 			display: flex;
-			justify-content: flex-end;
-			a {
+			justify-content: space-between;
+			align-items: center;
+
+			span {
+				a {
+					padding: 0 10px;
+					:hover {
+						color: #000;
+					}
+				}
+			}
+
+			.redirectLink {
 				background: none;
 				border: 1px solid #118cf0;
 				background: none;

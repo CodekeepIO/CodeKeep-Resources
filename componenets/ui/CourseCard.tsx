@@ -1,6 +1,6 @@
 import React from 'react';
 import { CourseCardStyle } from 'styles';
-import { Hash } from 'react-feather';
+import { Hash, ArrowLeft, Facebook, Twitter } from 'react-feather';
 
 type CourseCardType = {
 	name: string;
@@ -12,6 +12,9 @@ type CourseCardType = {
 };
 
 const CourseCard = ({ name, tags, cover, logo, description, link }: CourseCardType) => {
+	const courseSlug = name.toLowerCase().replace(' ', '_');
+	const URL = `https://resources.codekeep.io/course/${courseSlug}`;
+
 	return (
 		<CourseCardStyle>
 			<div className="cover-image">
@@ -30,7 +33,28 @@ const CourseCard = ({ name, tags, cover, logo, description, link }: CourseCardTy
 				</h3>
 				<p>{description}</p>
 				<div className="redirect">
-					<a href={`${link}?ref=codekeep.io`} target="_BLANK" rel="noreferrer noopener">
+					<span>
+						<a
+							target="_BLANK"
+							href={`http://facebook.com/sharer/sharer.php?u=${URL}`}
+							rel="noreferrer noopener"
+						>
+							<Facebook size={16} />
+						</a>
+						<a
+							target="_BLANK"
+							href={`https://twitter.com/intent/tweet?&url=${URL}&hashtags=codekeep`}
+							rel="noreferrer noopener"
+						>
+							<Twitter size={16} />
+						</a>
+					</span>
+					<a
+						href={`${link}?ref=codekeep.io`}
+						target="_BLANK"
+						className="redirectLink"
+						rel="noreferrer noopener"
+					>
 						Visit
 					</a>
 				</div>
